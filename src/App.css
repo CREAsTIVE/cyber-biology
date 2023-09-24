@@ -1,38 +1,113 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body, html, div#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  --text-header: #81F5BD;
+  --text-low-accent: #79C6A1;
+  --text-hidden: #002020;
+  background: #002020;
+  font-family: Nunito;
+}
+
+span.center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Top bar */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 0 1em;
+  background: #112D2F;
+}
+
+.header-container .header {
+  color: var(--text-header);
+  font-size: 40px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container .items {
   display: flex;
-  flex-direction: column;
+  /*margin-left: auto;*/
+  margin-left: 8em;
+  gap: 4em;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header-container .items .item {
+  color: var(--text-hidden);
+  text-align: center;
+  font-size: 32px;
+  font-family: Nunito;
+  transition: color 0.3s linear;
+}
+.header-container .items button {
+  background:none; border:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-container .items .item.selected {
+  color: var(--text-low-accent);
+}
+
+
+.header-container .items .item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--text-low-accent);
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.header-container .items .item.selected::after {
+  width: 100%;
+}
+
+/* Content page */
+
+.content-container {
+  overflow-y: scroll;
+}
+
+.content-container::-webkit-scrollbar { 
+    width: 0 !important
+}
+
+.content-page {
+  display: flex;
+  padding: 30px;
+  margin-bottom: 1em;
+  flex-direction: column;
 }
