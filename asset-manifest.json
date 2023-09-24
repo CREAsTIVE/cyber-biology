@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cyber-biology/static/css/main.e52a4b7a.css",
-    "main.js": "/cyber-biology/static/js/main.6a6922ba.js",
+    "main.css": "/cyber-biology/static/css/main.1a4b4437.css",
+    "main.js": "/cyber-biology/static/js/main.ecc9e25e.js",
     "static/js/787.eb159f5f.chunk.js": "/cyber-biology/static/js/787.eb159f5f.chunk.js",
     "static/media/CBLogo.png": "/cyber-biology/static/media/CBLogo.913cf6b5d4aadcaa42bd.png",
     "index.html": "/cyber-biology/index.html",
-    "main.e52a4b7a.css.map": "/cyber-biology/static/css/main.e52a4b7a.css.map",
-    "main.6a6922ba.js.map": "/cyber-biology/static/js/main.6a6922ba.js.map",
+    "main.1a4b4437.css.map": "/cyber-biology/static/css/main.1a4b4437.css.map",
+    "main.ecc9e25e.js.map": "/cyber-biology/static/js/main.ecc9e25e.js.map",
     "787.eb159f5f.chunk.js.map": "/cyber-biology/static/js/787.eb159f5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e52a4b7a.css",
-    "static/js/main.6a6922ba.js"
+    "static/css/main.1a4b4437.css",
+    "static/js/main.ecc9e25e.js"
   ]
 }
